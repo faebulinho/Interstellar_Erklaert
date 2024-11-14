@@ -114,7 +114,7 @@ if a_s<F_GM:
     print("Schwarzschild: Planet überlebt")
 
 #Kerr-Metrik Beschleunigung
-a_k=(2*G*M*r_retrograd*(2*r_M))/((r_retrograd**2 + a**2)**3 * (r_retrograd**2-3*a**2)) 
+a_k=(2*G*M*r_retrograd*(2*r_M)*(r_retrograd**2-3*a**2))/((r_retrograd**2 + a**2)**3)
 print("Kerr Gezeitenbeschleunigung=", a_k, "m/s^2")
 
 if a_k>F_GM:
